@@ -38,7 +38,7 @@ res = a.dot(e)
 print(res)
 f = np.array([[0.6, 1]]) #二维数组和一维数组矩阵乘法得到 [5]
 g = np.array([5, 2])
-ress = f.dot(g)
+ress = f.dot(g)         # f.T.dot(g)会报错
 print(ress)
 h = np.array([1,2])
 resss = g.dot(h)
@@ -46,7 +46,6 @@ print(resss) #两个一维数组矩阵乘法得到 9， 不同维度一维数组
 j = np.array([2])
 print(1-j) #会自动转化为 [-1]
 print(f.T.dot(j)) #得到 [1.2 2]
-
 
 
 #矩阵/数组/列表转换
